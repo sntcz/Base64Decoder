@@ -41,6 +41,7 @@
             this.toolStripStatusByteBin = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusSpring = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusWeb = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusSupport = new System.Windows.Forms.ToolStripStatusLabel();
             this.panelButton.SuspendLayout();
             this.statusBar.SuspendLayout();
             this.SuspendLayout();
@@ -124,7 +125,8 @@
             this.toolStripStatusByteDec,
             this.toolStripStatusByteBin,
             this.toolStripStatusSpring,
-            this.toolStripStatusWeb});
+            this.toolStripStatusWeb,
+            this.toolStripStatusSupport});
             this.statusBar.Location = new System.Drawing.Point(0, 428);
             this.statusBar.Name = "statusBar";
             this.statusBar.Size = new System.Drawing.Size(800, 22);
@@ -136,34 +138,52 @@
             this.toolStripStatusPosition.Name = "toolStripStatusPosition";
             this.toolStripStatusPosition.Size = new System.Drawing.Size(62, 17);
             this.toolStripStatusPosition.Text = "Position: 0";
+            this.toolStripStatusPosition.ToolTipText = "Position";
             // 
             // toolStripStatusByteDec
             // 
+            this.toolStripStatusByteDec.AutoToolTip = true;
             this.toolStripStatusByteDec.Margin = new System.Windows.Forms.Padding(12, 3, 0, 2);
             this.toolStripStatusByteDec.Name = "toolStripStatusByteDec";
             this.toolStripStatusByteDec.Size = new System.Drawing.Size(12, 17);
             this.toolStripStatusByteDec.Text = "?";
+            this.toolStripStatusByteDec.ToolTipText = "Decimal value";
             // 
             // toolStripStatusByteBin
             // 
+            this.toolStripStatusByteBin.AutoToolTip = true;
             this.toolStripStatusByteBin.Margin = new System.Windows.Forms.Padding(12, 3, 0, 2);
             this.toolStripStatusByteBin.Name = "toolStripStatusByteBin";
             this.toolStripStatusByteBin.Size = new System.Drawing.Size(50, 17);
             this.toolStripStatusByteBin.Text = "???? ????";
+            this.toolStripStatusByteBin.ToolTipText = "Binary value";
             // 
             // toolStripStatusSpring
             // 
             this.toolStripStatusSpring.Name = "toolStripStatusSpring";
-            this.toolStripStatusSpring.Size = new System.Drawing.Size(559, 17);
+            this.toolStripStatusSpring.Size = new System.Drawing.Size(500, 17);
             this.toolStripStatusSpring.Spring = true;
             // 
             // toolStripStatusWeb
             // 
+            this.toolStripStatusWeb.AutoToolTip = true;
             this.toolStripStatusWeb.IsLink = true;
             this.toolStripStatusWeb.Name = "toolStripStatusWeb";
             this.toolStripStatusWeb.Size = new System.Drawing.Size(78, 17);
             this.toolStripStatusWeb.Text = "www.sntcz.cz";
             this.toolStripStatusWeb.Click += new System.EventHandler(this.toolStripStatusWeb_Click);
+            // 
+            // toolStripStatusSupport
+            // 
+            this.toolStripStatusSupport.AutoToolTip = true;
+            this.toolStripStatusSupport.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripStatusSupport.Image = global::Base64Decoder.Properties.Resources.support;
+            this.toolStripStatusSupport.IsLink = true;
+            this.toolStripStatusSupport.Margin = new System.Windows.Forms.Padding(6, 3, 6, 2);
+            this.toolStripStatusSupport.Name = "toolStripStatusSupport";
+            this.toolStripStatusSupport.Size = new System.Drawing.Size(16, 17);
+            this.toolStripStatusSupport.ToolTipText = "Report a problem";
+            this.toolStripStatusSupport.Click += new System.EventHandler(this.toolStripStatusSupport_Click);
             // 
             // FormMain
             // 
@@ -199,5 +219,6 @@
         private ToolStripStatusLabel toolStripStatusByteBin;
         private ToolStripStatusLabel toolStripStatusSpring;
         private ToolStripStatusLabel toolStripStatusWeb;
+        private ToolStripStatusLabel toolStripStatusSupport;
     }
 }

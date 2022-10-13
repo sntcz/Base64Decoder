@@ -91,5 +91,18 @@ namespace Base64Decoder
                 System.Diagnostics.Debug.WriteLine(ex);
             }
         }
+
+        private void toolStripStatusSupport_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                System.Diagnostics.Process.Start(
+                new System.Diagnostics.ProcessStartInfo("https://github.com/sntcz/Base64Decoder/issues") { UseShellExecute = true });
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex);
+            }
+        }
     }
 }
